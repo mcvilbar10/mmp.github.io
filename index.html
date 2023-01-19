@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medalla Milagrosa Parish</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section{
+            margin-top: 100px;
+        }
+        .section .carousel-item{
+            min-height: 70vh;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding: 20;
+            z-index: 1;
+        }
+        .section .carousel-item::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0,0,0,0,.5);
+            z-index: -1;
+        }
+        .section .carousel-item .container{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .section .carousel-item h2{
+            font-size: 70px;
+            color:darkblue;
+            margin: 0,0,10px;
+            opacity: 0;
+        }
+        .section .carousel-item.active h2{
+            animation: fadeLeft 0.5s ease forwards;
+        }
+        @keyframes fadeLeft{
+            0%{opacity: 0;
+            transform: translateX(30px);}
+            100%{opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        .section .carousel-controls{
+            position:absolute;
+            left: 40%;
+            bottom: 40px;
+            z-index: 20;
+            transform: translateX(-50%);
+
+        }
+        .section .carousel-indicators{
+            position: relative;
+            margin: 0;
+        }
+        .section .carousel-indicators li{
+            width: 20px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <a href="/index.html" class="navbar-brand.mb=0 h4" style="text-decoration: none; margin-right: 100px;">
+                <img class="d-inline-block align-top rounded-5" src="images/home/Medalla Milagrosa Logo.jpg" width = "90px" height="82px">
+                MMP
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV" aria-controls= "navbarNAV" aria-expanded="false" aria-label="Toggle Navigation" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNAV">
+                <ul class="navbar-nav">
+                    <li class="navbar-item dropdown">
+                        <a href="#about" class="nav-link dropdown-toggle" id="navbarMin1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarMin1">
+                            <li><a href="/index.html" class="dropdown-item">History</a></li>
+                            <li><a href="/MMPVisionMission.html" class="dropdown-item">MMP Vision and Mission</a></li>
+                            <li><a href="/ppc.html" class="dropdown-item">Parish Pastoral Council</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarMin" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            Ministries
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarMin">
+                            <li><a href="/worship.html" class="dropdown-item">WORSHIP</a></li>
+                            <li><a href="/education.html" class="dropdown-item">EDUCATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item ">
+                        <a href="/Organization.html" class="nav-link">
+                            Organizations
+                        </a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="/GSK.html" class="nav-link">
+                            GSK/BEC
+                        </a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a href="/contact.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control ms-5">
+                    <button type="submit" class="btn btn-primary ms-2">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+            <div id="MMPcarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image:url('images/home/The\ Church.jpg');">
+                    </div>
+                    <div class="carousel-item" style="background-image: url('images/home/MMP1-Altar.jpg');">
+                    </div>
+                    <div class="carousel-item" style="background-image:url('images/home/MMP-Adoration\ Chapel.jpg')">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#MMPcarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#MMPcarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+    </section>
+    <section>
+        <div class="d-flex">
+            <div class="p-5 flex-grow-1" style="background-color:bisque"><h1>About Medalla Milagrosa Parish</h1>
+            <p style="text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ad, exercitationem deleniti veniam qui quis autem saepe esse non error voluptate totam illum architecto iste molestias sint consequatur quas.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi rerum, sed sunt quod in unde molestiae nesciunt vel dolore placeat nam eaque nostrum nihil perferendis. Laborum totam blanditiis corrupti cupiditate.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem minima iste molestias nisi perferendis, quam ratione, maiores ab corporis, fugiat dolore amet consequuntur voluptatum qui placeat. Numquam sit inventore maiores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam, quo quas earum asperiores tempora ratione, laboriosam recusandae fuga amet iure molestiae voluptatum enim commodi! Quisquam minus consectetur reiciendis atque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, aperiam corrupti architecto velit dolore tenetur animi, error quaerat aspernatur porro laborum doloribus pariatur id quia molestiae! Est quam voluptates quod?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid doloremque dignissimos omnis consequatur, officiis repellat nisi quam magni, sed ipsam velit. Facere eaque enim quia quo nisi deserunt nihil.<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non vitae maxime, error est in quisquam molestiae a dicta iusto sint earum. Ut illum, blanditiis quidem placeat laborum assumenda tempora?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae officiis quasi vitae debitis adipisci ab qui animi quibusdam voluptas consequuntur earum impedit nesciunt, magnam minima porro voluptatem. Sunt, veniam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam dolores maiores voluptate, libero, minima quos, animi fuga quae error rem quibusdam corporis culpa praesentium ut nihil mollitia expedita accusamus?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae magni accusantium nostrum explicabo quos error quisquam, obcaecati assumenda possimus numquam. Harum, sapiente dignissimos ipsam numquam sed corporis! Rerum, laudantium mollitia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium nam, commodi rem eum natus assumenda blanditiis aut exercitationem fugiat ea itaque, quo molestias aspernatur. Delectus nesciunt cupiditate debitis quaerat?<br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat cum, obcaecati rem possimus non, fugit molestiae quod dolor recusandae officiis ab. Sunt quia ipsum exercitationem aperiam, soluta animi maiores eligendi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores fuga saepe asperiores distinctio aperiam odio sed minima numquam quis, eligendi id reprehenderit exercitationem quasi, aspernatur tempore dolore blanditiis est!
+            </p>
+            </div>
+            <div class="p-5 flex-grow-0" style="text-align: center; background-color: #abdbe3;"><H1>Schedules</H1>
+                    <div class="d-flex">
+                        <div class="p-1"><h6>Schedule of Mass for month of October</h6><br>
+                                                <h3>Weekdays</h3><br>
+                                                    Monday -Saturday: 5:00AM <br><br>
+                                                <h3>Sundays</h3><br>
+                                                6:30AM<br>
+                                                9:00AM<br>
+                                                5:30PM<br>
+                        </div>
+                    </div>
+                    <div class="p-1"><h6>Pre-CANA and Pre-JORDAN Seminars Schedules </h6><br>
+                        <h3>Pre-CANA</h3><br>
+                        Every 2nd Saturday and Sunday<br>
+                            Saturday: 8:00AM - 4PM 
+                            Sunday  : 8:00AM - 12PM <br>
+                        <h3>Pre-Jordan</h3><br>
+                        Every 3rd Saturday and Sunday<br>
+                        8:00AM - 12:00AM <br>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="d-flex justify-content-center" style="background-color:black; color:whitesmoke;">
+        <footer class="py-3" >
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="d-flex flex-column bd-highlight mb-3">
+                    <h6 class="h6">Social Media Links</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="https://www.facebook.com/medalla.milagrosa.792303" class="nav-link p-2 text-muted">Facebook</a></li>
+                        <li class="nav-item mb-1"><a href="#" class="nav-link p-2 text-muted">WhatsApp</a></li>
+                        <li class="nav-item mb-1"><a href="#" class="nav-link p-2 text-muted">Instagram</a></li>
+                        <li class="nav-item mb-1"><a href="#" class="nav-link p-2 text-muted">LinkedIn</a></li>
+                        <li class="nav-item mb-1"><a href="#" class="nav-link p-2 text-muted">About</a></li>
+                    </ul>
+                </div>             
+                <div class="d-flex flex-column bd-highlight mb-3 ms-5">
+                    <form>
+                        <h6 class="h6">Subscribe to our newsletter</h6>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Medalla Milagrosa Parish All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
